@@ -18,6 +18,7 @@ describe('<Board/>', () => {
     it('Renders the title', () => {
         const title = 'Foo';
         const wrapper = shallow(<Board title={title} />);
+        console.log(wrapper.html())
         expect(wrapper.contains(<h2>{title}</h2>)).toEqual(true);
     });
 
